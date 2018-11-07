@@ -43,6 +43,10 @@ func (client *client) Connect() error {
 	return nil
 }
 
+func (client *client) String() string {
+	return "test awsbeat:firehose"
+}
+
 func (client *client) Publish(batch publisher.Batch) error {
 	events := batch.Events()
 	rest, _ := client.publishEvents(events)

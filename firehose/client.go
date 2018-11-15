@@ -44,7 +44,7 @@ func (client *client) Connect() error {
 }
 
 func (client *client) String() string {
-	return "test awsbeat:firehose"
+	return "awsbeats-firehose"
 }
 
 func (client *client) Publish(batch publisher.Batch) error {
